@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="tuxone_socialmetatags.helper" class="%tuxone_socialmetatags.helper.class%">
+            <argument type="service" id="templating" />
+            <argument>%tuxone_socialmetatags.twitter_service_account%</argument>
+            <tag name="templating.helper" alias="socialmetatags" />
+        </service>
+
+        <service id="tuxone_socialmetatags.twig" class="%tuxone_socialmetatags.twig.class%">
+            <argument type="service" id="service_container" />
+            <tag name="twig.extension" />
+        </service>
+
+    </services>
+</container>
