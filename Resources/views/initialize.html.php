@@ -13,9 +13,9 @@
 <meta name="twitter:description" content="Il rating italiano ">
 
 <?php
-    if($twitter_image != null) {
+    if($image != null) {
 ?>
-        <meta name="twitter:image" content="<?php echo $twitter_image; ?>">
+        <meta name="twitter:image" content="<?php echo $image; ?>">
 <?php
     }
 ?>

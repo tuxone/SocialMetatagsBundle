@@ -20,15 +20,15 @@ class SocialMetatagsHelperTest extends \PHPUnit_Framework_TestCase
             ->expects($this->once())
             ->method('render')
             ->with('TuxOneSocialMetatagsBundle::initialize.html.php', array(
+                'image' => null,
                 'twitter_site' => 'foo',
-                'twitter_image' => null,
                 'twitter_app_id_googleplay' => null,
                 'twitter_app_id_iphone' => null,
                 'twitter_app_id_ipad' => null,
             ))
             ->will($this->returnValue($expected));
 
-        $helper = new SocialMetatagsHelper($templating, 'foo');
+        $helper = new SocialMetatagsHelper($templating, null, 'foo');
         $this->assertSame($expected, $helper->initialize(array()));
     }
 }

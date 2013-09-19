@@ -26,8 +26,12 @@ class TuxOneSocialMetatagsExtension extends Extension
             $container->setParameter('tuxone_socialmetatags.'.$attribute.'.class', $config['class'][$attribute]);
         }
 
-        foreach (array('site', 'image', 'app_id_googleplay', 'app_id_iphone', 'app_id_ipad') as $attribute) {
+        foreach (array('site', 'app_id_googleplay', 'app_id_iphone', 'app_id_ipad') as $attribute) {
             $container->setParameter('tuxone_socialmetatags.twitter.'.$attribute, $config['twitter'][$attribute]);
+        }
+
+        foreach (array('image') as $attribute) {
+            $container->setParameter('tuxone_socialmetatags.'.$attribute, $config[$attribute]);
         }
     }
 

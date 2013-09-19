@@ -8,8 +8,8 @@
 
         <service id="tuxone_socialmetatags.helper" class="%tuxone_socialmetatags.helper.class%">
             <argument type="service" id="templating" />
+            <argument>%tuxone_socialmetatags.image%</argument>
             <argument>%tuxone_socialmetatags.twitter.site%</argument>
-            <argument>%tuxone_socialmetatags.twitter.image%</argument>
             <argument>%tuxone_socialmetatags.twitter.app_id_googleplay%</argument>
             <argument>%tuxone_socialmetatags.twitter.app_id_iphone%</argument>
             <argument>%tuxone_socialmetatags.twitter.app_id_ipad%</argument>
