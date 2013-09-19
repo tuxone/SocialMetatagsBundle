@@ -45,7 +45,7 @@ class TuxOneSocialMetatagsExtensionTest extends \PHPUnit_Framework_TestCase
 
         $extension = new TuxOneSocialMetatagsExtension();
         $configs = array(
-            array('twitter_service_account' => 'foo'),
+            array('twitter' => array('site' => 'foo')),
         );
         $extension->load($configs, $container);
     }

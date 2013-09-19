@@ -27,7 +27,7 @@ class SocialMetatagsExtension extends \Twig_Extension
     public function getFunctions()
     {
         return array(
-            'socialmetatags_initialize' => new \Twig_Function_Method($this, 'renderInitialize', array('is_safe' => array('html'))),
+            'socialmetatags_initialize' => new \Twig_Function_Method($this, 'renderInitialize', array('twitter_image' => 'http://example.com')),
         );
     }
 
