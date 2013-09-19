@@ -20,13 +20,6 @@
     }
 ?>
 
-<meta name="twitter:app:url:iphone" content="flywers://s/p/30">
-<meta name="twitter:app:url:ipad" content="flywers://s/p/30">
-<meta name="twitter:app:url:googleplay" content="http://api.flywers.com/s/p/30">
-
-
-
-
 <?php
 if($twitter_app_id_iphone != null) {
     ?>
@@ -50,3 +43,7 @@ if($twitter_app_id_googleplay != null) {
 <?php
 }
 ?>
+
+<meta name="twitter:app:url:iphone" content="flywers://s/p/30">
+<meta name="twitter:app:url:ipad" content="flywers://s/p/30">
+<meta name="twitter:app:url:googleplay" content="http://api.flywers.com/s/p/30">
